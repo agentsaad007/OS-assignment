@@ -15,9 +15,6 @@ for i in range(num):
     arr[i][1]=(int(input("Enter Burst Time Of Process "+repr(i+1)+" : ")))
     arr[i][2]=arr[i][1]
 arr.sort()
-for i in range(len(arr)):
-    for j in range(2):
-        print arr[i][j]
 print "\nProcess\t|Turnaround Time|Waiting Time\n"
 i=0
 while remainp!=0:
