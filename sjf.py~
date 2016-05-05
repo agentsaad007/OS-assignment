@@ -19,9 +19,9 @@ for j in xrange(n)
 		if temp>arr[i][0] and arr[i]!=0
 			ind.append(i)
 			temp=arr[i][0]	
-wt[ind]=arr[ind][1]
-wtotal+=wt[ind]
-arr[ind][0]=0
+	wt[ind]=arr[ind][1]
+	wtotal+=wt[ind]
+	arr[ind][0]=0
 print 'ProcessNumber\tArrivalTime\tBurstTime\tWaiting Time'
 for i in xrange(n):
     print str(arr[i][2]), '\t\t', str(arr[i][0]), '\t\t', str(arr[i][1]), '\t\t', str(wt[i])
